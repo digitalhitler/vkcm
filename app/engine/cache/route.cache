@@ -1,0 +1,31 @@
+<?php return array (
+  0 => 
+  array (
+    'GET' => 
+    array (
+      '/' => 'MainPage',
+      '/posts/' => 'PostsList',
+    ),
+  ),
+  1 => 
+  array (
+    'GET' => 
+    array (
+      0 => 
+      array (
+        'regex' => '~^(?|/post/([0-9]+))$~',
+        'routeMap' => 
+        array (
+          2 => 
+          array (
+            0 => 'PostShow',
+            1 => 
+            array (
+              'id' => 'id',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);
