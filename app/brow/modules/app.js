@@ -53,8 +53,8 @@ App.prototype = new EventEmitter;
 /**
  * Inject debug module in application.
  * Can be used for force-inject debug
- * @param  {string}  [namespaces] Semicolon-divided list of debug namespaces
- * @return {undefined}
+ * @param  {String}  [namespaces] Semicolon-divided list of debug namespaces
+ * @return {Undefined}
  * @link   http://smalljs.org/logging/debug/
  * @public
  */

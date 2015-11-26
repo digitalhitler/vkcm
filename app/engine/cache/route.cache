@@ -4,7 +4,6 @@
     'GET' => 
     array (
       '/' => 'MainPage',
-      '/posts/' => 'PostsList',
     ),
   ),
   1 => 
@@ -13,15 +12,33 @@
     array (
       0 => 
       array (
-        'regex' => '~^(?|/post/([0-9]+))$~',
+        'regex' => '~^(?|/api/(.+))$~',
         'routeMap' => 
         array (
           2 => 
           array (
-            0 => 'PostShow',
+            0 => 'ApiResponse',
             1 => 
             array (
-              'id' => 'id',
+              'request' => 'request',
+            ),
+          ),
+        ),
+      ),
+    ),
+    'POST' => 
+    array (
+      0 => 
+      array (
+        'regex' => '~^(?|/api/(.+))$~',
+        'routeMap' => 
+        array (
+          2 => 
+          array (
+            0 => 'ApiResponse',
+            1 => 
+            array (
+              'request' => 'request',
             ),
           ),
         ),
