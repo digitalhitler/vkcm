@@ -1,4 +1,6 @@
 <?php
+namespace VKCM\Modules;
+
 class Page {
 
     private $layout = "default";

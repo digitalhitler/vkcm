@@ -1,4 +1,6 @@
 <?php
+namespace VKCM\Modules\ORM;
+use \PDO as PDO;
 
     /**
      *
@@ -38,7 +40,7 @@
      *
      */
 
-    class ORM implements ArrayAccess {
+    class ORM implements \ArrayAccess {
 
         // ----------------------- //
         // --- CLASS CONSTANTS --- //
@@ -2314,7 +2316,7 @@
      * A result set class for working with collections of model instances
      * @author Simon Holywell <treffynnon@php.net>
      */
-    class IdiormResultSet implements Countable, IteratorAggregate, ArrayAccess, Serializable {
+    class IdiormResultSet implements \Countable, \IteratorAggregate, \ArrayAccess, \Serializable {
         /**
          * The current result set as an array
          * @var array
@@ -2446,6 +2448,6 @@
     /**
      * A placeholder for exceptions eminating from the IdiormString class
      */
-    class IdiormStringException extends Exception {}
+    class IdiormStringException extends \Exception {}
 
-    class IdiormMethodMissingException extends Exception {}
+    class IdiormMethodMissingException extends \Exception {}

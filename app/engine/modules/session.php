@@ -1,4 +1,6 @@
 <?php
+namespace VKCM\Modules;
+
 session_start();
 
 class Session {

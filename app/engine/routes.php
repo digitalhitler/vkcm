@@ -5,7 +5,7 @@ $dispatcher = FastRoute\cachedDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', 'MainPage');
     $r->addRoute(
       ['GET', 'POST'],
-      '/api/{request:.+}', 
+      '/api/{request:.+}',
       'ApiResponse');
 }, [
     'cacheFile' => APP_ROOT . '/app/engine/cache/route.cache', /* required */

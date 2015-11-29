@@ -7,10 +7,10 @@ class ApiResponse {
 
   function __construct($httpCode, $response) {
 
-    $headers[] = "HTTP/1.1 " . $httpCode . " " . self::_responseStatus($httpCode);
-    $headers[] = "Access-Control-Allow-Orgin: *";
-    $headers[] = "Access-Control-Allow-Methods: *";
-    $headers[] = "Content-Type: application/json";
+    $this->headers[] = "HTTP/1.1 " . $httpCode . " " . self::_responseStatus($httpCode);
+    $this->$headers[] = "Access-Control-Allow-Orgin: *";
+    $this->$headers[] = "Access-Control-Allow-Methods: *";
+    $this->$headers[] = "Content-Type: application/json";
     $this->response = $response;
 
   }
@@ -19,7 +19,13 @@ class ApiResponse {
     $this->response[$key] = $data;
   }
 
-  private function _checkForQueued
+  private function send() {
+    if ($this->headers) {
+      foreach ($this->headers as $header) {
+        header($header);
+      }
+    }
+  }
 
   private static function _responseStatus($code) {
       $status = array(

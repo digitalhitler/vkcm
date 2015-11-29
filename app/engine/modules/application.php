@@ -1,5 +1,5 @@
 <?php
-
+namespace VKCM\Modules;
 class Application {
 
     public function __construct() {
