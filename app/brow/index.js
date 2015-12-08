@@ -13,20 +13,21 @@
  *     Don't forget to $ pm2 gulp stop after all.
  */
 
-// @task 154 { published & done 24/11/15 }
 // Issue with global link that diffs in node/common envs handles
 // easily fixes with this obvious:
-if (!global && window) var global = window;
+
 
 // * Dependencies
 //   Transport & network modules
 var request       = require('superagent');
 
 //   Utilities
-var event         = require('dom-events');
-var Spinner       = require('spin');
 var _             = require('lodash');
 var EventEmitter  = require('events').EventEmitter;
+
+global.loadingState = require('./extensions/nprogress');
+loadingState.start();
+loadingState.set(0.3);
 
 // * Configuration extension
 var configuration = {
@@ -37,4 +38,36 @@ var configuration = {
 var App = require('./modules/app');
 var vkcm = new App(configuration);
 
-vkcm.debug(vkcm);
+global.vkcm = vkcm;
+
+loadingState.inc();
+
+// * Frameworks
+vkcm.requireFrameworks({
+
+  // LocalStorage
+  store2: require('store2'),
+
+  // custom emitters for kbd & mouse
+  specialEvents: require('./modules/specialEvents'),
+
+  // jQ & BS
+  // @todo: kill-out jQuery. Its last instance
+});
+
+
+
+var Runtime = require('./modules/runtimeCollector.js')(vkcm);
+console.log(Runtime);
+
+vkcm.once('frontendReady', function() {
+  vkcm.debug('Frontend completely loaded.');
+  loadingState.done();
+
+});
+
+console.log(vkcm.frameworks);
+
+// $(document).ready(function() {
+//   console.warn('doc ready');
+// });

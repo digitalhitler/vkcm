@@ -1,30 +1,45 @@
 <?php
+namespace VKCM\Modules\API;
 
-class ApiResponse {
+use VKCM\Modules\API\ErrorResponse;
+use VKCM\Modules\API\GoodResponse;
+
+class Response {
 
   protected $headers = [];
-  protected $response;
+  protected $response = [];
+  protected $requestData = [];
+  protected $httpCode;
+  protected $wayfinder;
 
-  function __construct($httpCode, $response) {
+  function __construct($requestData = []) {
 
-    $this->headers[] = "HTTP/1.1 " . $httpCode . " " . self::_responseStatus($httpCode);
-    $this->$headers[] = "Access-Control-Allow-Orgin: *";
-    $this->$headers[] = "Access-Control-Allow-Methods: *";
-    $this->$headers[] = "Content-Type: application/json";
-    $this->response = $response;
+    $this->requestData      = $requestData;
+
 
   }
 
-  private function _appendResponse($key, $data) {
+  public function clear() {
+    $this->response = array();
+  }
+
+  public function push($key, $data) {
     $this->response[$key] = $data;
   }
 
   private function send() {
-    if ($this->headers) {
+    if (!$this->headers) {
+
+      $this->headers[] = "HTTP/1.1 " . $httpCode . " " . self::_responseStatus($httpCode);
+      $this->$headers[] = "Access-Control-Allow-Orgin: *";
+      $this->$headers[] = "Access-Control-Allow-Methods: *";
+      $this->$headers[] = "Content-Type: application/json";
+      $this->response = $response;
+
       foreach ($this->headers as $header) {
         header($header);
       }
-    }
+    } else die("Response already sent");
   }
 
   private static function _responseStatus($code) {

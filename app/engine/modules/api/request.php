@@ -1,6 +1,11 @@
 <?php
 namespace VKCM\Modules\API;
 
+use VKCM\Modules\API\Response as Response;
+use VKCM\Modules\API\ErrorResponse as ErrorResponse;
+use VKCM\Modules\API\GoodResponse as GoodResponse;
+use VKCM\Modules\API\Wayfinder as Wayfinder;
+
 /*
 @todo: session-avail endpoints
 validate root to method
@@ -17,21 +22,22 @@ class Request
   protected $request;
   protected $queryString;
 
-  protected $isBroken;
+  protected $authorizationKey;
+  protected $isAuthPassed = false;
+  protected $isBroken = false;
 
   public $responseObj = false;
 
   public function __construct ($request) {
 
     // be default we are thinking that request isn't broken
-    $this->isBroken = false;
-
     $this->request = $request;
     $this->uri = $_SERVER["REQUEST_URI"];
     $this->method = $_SERVER['REQUEST_METHOD'];
 
     if (!in_array($this->method, ['GET', 'POST'])) {
 
+      $this->isBroken = true;
       $this->reject("We are using GET and POST-requests only.", 405);
 
     } else {
@@ -60,22 +66,29 @@ class Request
 
     }
 
+
     var_dump($this);
 
   }
 
-  public function sendResponse ($responseObject) {
-    if(is_subclass_of($responseObject, 'ApiResponse')) {
-
-    }
-  }
-
   public function accept () {
-
+    $this->responseObject = new GoodResponse([
+      "method"      => $this->method,
+      "uri"         => $this->uri,
+      "endpoint"    => $this->endpoint,
+      "controller"  => $this->controller,
+      "action"      => $this->action,
+      "params"      => $this->params
+    ]);
   }
 
-  public function reject ($message = '', $httpCode = 500, $appCode = -1) {
-
+  public function reject ($message = '', $httpCode = 500, $errNo = -1) {
+    $this->responseObject = new ErrorResponse([
+      "message" => $message,
+      "code"    => $httpCode,
+      "errno"   => $errNo;
+    ]);
+    $this->sendAndTerminate();
   }
 
   public function processAPI () {
@@ -84,6 +97,49 @@ class Request
     }
     return $this->_response("No Endpoint: $this->endpoint", 404);
   }
+
+  public function sendAndTerminate() {
+    if(is_object($this->responseObject) && is_subclass_of($this->responseObject, 'Response')) {
+      $this->responseObject->send();
+    }
+    die();
+  }
+
+  public function sendResponse () {
+    if(is_object($this->responseObject) && is_subclass_of($this->responseObject, 'Response')) {
+      $this->responseObject->send();
+    }
+  }
+
+  public function findAuthorizationKey() {
+    if($_COOKIE["authKey"])
+  }
+
+  public function getAuthorizationKey() {
+
+    if(!$this->authorizationKey) {
+      $this->findAuthorizationKey();
+    }
+
+    return $this->authorizationKey;
+
+  }
+
+  public function isAuthorized() {
+
+    if($_SESSION["authKey"]) {
+
+      $authKeyGiven = $this->getAuthorizationKey();
+
+      if($authKeyGiven == $_SESSION["authKey"]) {
+        return true;
+      }
+
+      return false;
+
+  }
+
+  /* ===== privates ===== */
 
   private function _response($data, $status = 200) {
     header("HTTP/1.1 " . $status . " " . $this->_requestStatus($status));

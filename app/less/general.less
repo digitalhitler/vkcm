@@ -1,5 +1,137 @@
-@defaultFont:       'Roboto', 'Ubuntu', 'Segoe UI', 'Tahoma', sans-serif;
+// * UI framework setup:
+//
+//
 
-html {
+// * Variables:
+@assets: "/assets";
+
+
+// * App components
+@import "variables.less";
+@import "fonts.less";
+@import "components/theme-geometry.less";
+@import "components/theme.less";
+@import "components/controls.less";
+
+@import (inline) "extensions/animate.css";
+@import (inline) "extensions/nprogress.css";
+// @todo: who is this both?
+@import (inline) "extensions/tether.css";
+@import (inline) "extensions/tether-tooltip.css";
+
+// notifications framework:
+//@import (inline) "extensions/toastr.css";
+
+
+
+body {
   font-family: @defaultFont;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: @color-base;
+  margin: 0;
+
+  p {
+      word-spacing: 0.05em;
+      line-height: 22px;
+  }
+
+  code,
+  pre {
+    font-family: @monospaceFont;
+    font-size: 0.8em;
+    background-color: #f8f8f8;
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+  }
+
+  code {
+    color: #e96900;
+    padding: 3px 5px;
+    margin: 0 2px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  em {
+    color: #7f8c8d;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: @alternateFont;
+    color: @vkcm-navy;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin: 0 0 1em;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: 2em 0 0.8em;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid @color-muted-alt;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 3em 0 1.2em;
+    position: relative;
+
+    >a {
+      text-decoration: none;
+      color: @vkcm-navy;
+      cursor: pointer;
+
+      &:before {
+        content: "#";
+        color: @color-dark-green;
+        opacity: .7;
+        position: absolute;
+        left: -0.9em;
+        font-size: 0.8em;
+        font-weight: bold;
+        padding-top: 2px;
+      }
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    color: @color-base;
+    font-size: 15px;
+  }
+}
+
+.search_field {
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding: 0 15px 0 30px;
+  border: 1px solid rgb(227, 227, 227);
+  outline: none;
+  border-radius: 15px;
+  margin-right: 10px;
+  transition: border-color 0.2s ease;
+  background: rgb(255, 255, 255) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzIyRUQ1RjhBRkVBMTFFNEI5MEZFQzhGRjE2NEZDQkQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzIyRUQ1RjlBRkVBMTFFNEI5MEZFQzhGRjE2NEZDQkQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDMjJFRDVGNkFGRUExMUU0QjkwRkVDOEZGMTY0RkNCRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDMjJFRDVGN0FGRUExMUU0QjkwRkVDOEZGMTY0RkNCRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plb8NbcAAARVSURBVHja7J0LTxsxDIBzUPoAxqNAp41t//93dWwIGNAVSqHPxZJvdBUszl1ydq62ZA20Vpf4S/zI48iWy6VR4ZMtNYECUAAqCkABqCgABaCiABSAigJQACrVScP3C1mWhXx+02rHatvqDurWysBYoE5Rn62OrU6kGbLomlrm+8UAAFpWD6x+KDIAUGZWH6wOrb4oAJrsW+3iaA8pMCturY4UwNsCBu9FMPxbIK7xXwUAH7V6ZvWoYlsMrN6ATTYZAATXT+jvOQTiwmWVwVoSAMhqzgWkuHOrPzFrEgsgtJH2rH4RUl9sY1v2JNcBIWdABzvsG6WnmMHk+f0Mc/98gDRW6oU9rBW8BqfVi9gzgdsFgYG+eY78IQZM36wFsqljrCN83NH3mDGBE0CGxqcG3BGmi9MAVTSkt7segbkfKzviBNAjpprwoCsc+SHlENtAcX0DhF+bINwmGn+Oo28Yoe+/0b3MCZ89YkyNowDoefjfmGs2zx4QPtYFwD5heSHPQKooiOAZPwg+vi0pNS0DoEv4zJWpdrXymejju6kDaBFG/yiSz6fEhCdCtd5KGcAB4TPXjP26DtQHsQBcRdAwQJ5fNh48lOyDWABN497JGgjom6sN+RJHcgA6jv+fGqZNkTUZE2ZhJ0UAlOArRVzBuJUigB3CyJMirrY06whA0pGRScm+iATg+s5MEIBphP6LB7AQBGBRRwB1kixFAIuEoIqfrTEANAQBcAXZeYoAXIGtKQiAqy2zOgLoCALgasskRQCuZQZJ53B2S/ZFJABXdQl+ty1k9Iuv2osAmBB857EAAK7DAtNUXRAIZa2dMxg3jXu9/zGFPPk9oWw1njH2qxeoD2IBvBCD8SGT63EF37ERcrWpTNV6SxyJVQbkNnHm3aVSqv9PRoRZAGst5xXFgyY+KyOM/lEdAIBQTh/AOf2vkWdCG5+xHajNyQCAGTDwgBAjJhx5GP9Oiu//6yIYjqc/4Sgsm4P7Hk/Pz4/W7nh6bgzqKFytJQYFqtEOjnrfCxp9E/GskoRLemWuKD2Z1ytK8PvqFaUd83pFadcU38e9JBSQSQPIc//PRsBOEzGNvuUGEHr3CtK7CyNgo4PQhhPUpLOg9/Ls2BcyKJV6H92OaAix9m8naACOM6L3KwGX4vNZIcTcv11iujmsaEkCZt6NKbbJcuKxvJIMgNX8u48BumvCb1mOscAqu7zAAiHVFzaBe3k0tBc2AfTT2NlRSm/MWi/g8utCTfPvK8syrAcgm5lhXCn6yrLoEFIFUKVEhSClDpAsECd+ecaE6NnRpp0NFQdhEw/nFoHQVQC8EE5jQdjk4+kiIGz6/QB2CPruaGYICoAZggJghqAAmCEoAGYICiAMhKUC4IMAm0D3CoAHQinjKwA6hJsYxlcAdLlfgxDE+CANta0XhLd+LiWZ/kVtXlEXpAAUgIoCUAAqCkABqCgABaCiABSAigJQACoVyR8BBgACJWV2Jni/EAAAAABJRU5ErkJggg==") 8px 5px no-repeat;
+  background-size: 20px;
+  display: inline-block;
+  width: 190px;
+  font-weight: 400;
+  color: @color-base;
+  font-size: 14px;
+  box-shadow: none;
+  font-family: @alternateFont;
+
+  &:focus {
+    border-color: @vkcm-java;
+  }
 }
