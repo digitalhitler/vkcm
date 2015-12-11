@@ -1,41 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36a084b8-e085-4dec-9094-8d53f4338cbe" name="Default" comment="Cleanup commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/VKCM.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/eslintPlugin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jscs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/.jscsrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/exceptions/AppException.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/exceptions/InitException.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/map.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/middlewares.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/pathfinder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/app/transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/routes/v1/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/install.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/rawbundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/rawbundle.min.js" afterPath="" />
+    <list id="36a084b8-e085-4dec-9094-8d53f4338cbe" name="Default" comment="Cleanup commit" />
+    <list default="true" id="cd706b03-9bd9-4269-b9aa-5dc0b00c6a9e" name="566a2ec7f6325d8a08d847e3 Take out from Remark" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/remark" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/engine/views/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/temp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pages/test.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/engine/views/header.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/engine/views/footer.php" afterPath="$PROJECT_DIR$/app/engine/views/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/brow/index.js" afterPath="$PROJECT_DIR$/app/brow/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/VKCM.iml" afterPath="$PROJECT_DIR$/.idea/VKCM.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/app.js" afterPath="$PROJECT_DIR$/public/build/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
     </list>
@@ -69,52 +49,47 @@
       <favorite_root url="file://$PROJECT_DIR$/app/brow/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       <favorite_root url="file://$PROJECT_DIR$/app/less/general.less" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       <favorite_root url="file://$PROJECT_DIR$/public/index.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/app/engine/views/header.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/app/engine/views/footer.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
     </favorites_list>
     <favorites_list name="Externals">
       <favorite_root url="file:///Applications/XAMPP/etc/httpd.conf" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       <favorite_root url="file:///Applications/XAMPP/etc/extra/httpd-vhosts.conf" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
     </favorites_list>
+  </component>
+  <component name="FileColors">
+    <fileColor scope="LESS root" color="Rose" />
+    <fileColor scope="Browserify root" color="Rose" />
+    <fileColor scope="Changed Files" color="00360e" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/brow/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18513854">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding>
-                <element signature="e#1319#1391#0" expanded="true" />
-                <marker date="1449811343000" expanded="true" signature="1430:1500" placeholder="//..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="httpd.conf" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/XAMPP/etc/httpd.conf">
+      <file leaf-file-name="temp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/pages/temp.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpd-vhosts.conf" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/XAMPP/etc/extra/httpd-vhosts.conf">
+      <file leaf-file-name="vars.less" pinned="false" current-in-tab="false">
+        <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/vars.less">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
+      <file leaf-file-name="variables.less" pinned="false" current-in-tab="true">
+        <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/bootstrap/variables.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.8022923">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -135,11 +110,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/brow/index.js" />
         <option value="/Applications/XAMPP/etc/httpd.conf" />
         <option value="/Applications/XAMPP/etc/extra/httpd-vhosts.conf" />
+        <option value="$PROJECT_DIR$/public/pages/test.html" />
+        <option value="$PROJECT_DIR$/app/engine/views/header.html" />
+        <option value="$PROJECT_DIR$/app/engine/views/footer.html" />
         <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/pages/temp.html" />
         <option value="$PROJECT_DIR$/app/brow/index.js" />
+        <option value="/Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/bootstrap/variables.less" />
       </list>
     </option>
   </component>
@@ -150,16 +131,46 @@
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <task-name>browserify</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="styles" />
+              <dependency value="scripts" />
+            </dependencies>
+            <task-name>compile</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>default</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>less</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>scripts</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>styles</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watch</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+    </gulpfiles>
   </component>
   <component name="NamedScopeManager">
     <scope name="Browserify root" pattern="file[VKCM]:app/brow/index.js" />
     <scope name="LESS root" pattern="file[VKCM]:app/less/general.less" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="56" />
-    <option name="width" value="1846" />
-    <option name="height" value="1043" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -169,16 +180,31 @@
             <id />
           </State>
           <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
             <id>DOM issuesJavaScript</id>
           </State>
           <State>
             <id>EJS</id>
           </State>
           <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
             <id>File Watchers</id>
           </State>
           <State>
+            <id>General</id>
+          </State>
+          <State>
             <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
           </State>
           <State>
             <id>Handlebars/Mustache</id>
@@ -189,10 +215,31 @@
           <State>
             <id>JavaScript</id>
           </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Less</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>EJS</id>
+            <id>CssConvertColorToRgbInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -223,41 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VKCM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VKCM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VKCM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VKCM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VKCM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VKCM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -276,9 +288,124 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VKCM">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VKCM">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="brow">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VKCM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,7 +420,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="/Applications/XAMPP/etc/extra/httpd-vhosts.conf" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="jballant.CommonJSAutoComplete.mainJSDirKey-/server/webapps/VKCM" value="app/brow" />
     <property name="jballant.CommonJSAutoComplete.nodeModulesDir-/server/webapps/VKCM" value="" />
@@ -310,6 +437,26 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="52" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="55" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="60" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="543" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="52" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="55" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="60" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="543" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="js.buildTools.gulp.node_interpreter" value="/usr/local/bin/node" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="/usr/local/lib/node_modules/gulp" />
+    <property name="tasks.close.task.update.state.enabled" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
@@ -325,7 +472,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTraceType" factoryName="Spy-js" node="" config="" has-config="false" system-proxy="true" proxy-port="3546" open-browser="false" browser="">
+    <configuration default="true" type="JavaScriptTraceType" factoryName="Spy-js" node="/usr/local/bin/node" config="http://vkcm.ru/" has-config="false" system-proxy="true" proxy-port="3546" open-browser="false" browser="" limits="1,3,3,50">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -399,6 +546,53 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration default="false" name="Gulp compile" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>compile</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Gulp browserify" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>browserify</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Gulp watch" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>watch</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Debug JS" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://vkcm.ru/">
+      <mapping url="http://vkcm.ru" local-file="$PROJECT_DIR$/public" />
+      <method />
+    </configuration>
+    <configuration default="false" name="install" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="install" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Gulp.js.Gulp compile" />
+      <item index="1" class="java.lang.String" itemvalue="Gulp.js.Gulp browserify" />
+      <item index="2" class="java.lang.String" itemvalue="Gulp.js.Gulp watch" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Debug JS" />
+      <item index="4" class="java.lang.String" itemvalue="npm.install" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SpellCheckerSettings" BundledDictionaries="2" BundledDictionary0="jetbrains.dic" BundledDictionary1="english.dic" Folders="0" Dictionaries="0" />
@@ -419,17 +613,18 @@
     </option>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <changelist id="36a084b8-e085-4dec-9094-8d53f4338cbe" name="Default" comment="" />
       <created>1449791437733</created>
       <option name="number" value="Default" />
-      <updated>1449805638201</updated>
+      <updated>1449813499965</updated>
     </task>
-    <task id="566a2ec7f6325d8a08d847e3" summary="Take out from Remark">
-      <created>1449811253846</created>
+    <task active="true" id="566a2ec7f6325d8a08d847e3" summary="Take out from Remark">
+      <changelist id="cd706b03-9bd9-4269-b9aa-5dc0b00c6a9e" name="566a2ec7f6325d8a08d847e3 Take out from Remark" comment="#trello @taskid 566a2ec7f6325d8a08d847e3 26 &#10;Take out from Remark&#10;" />
+      <created>1449819290830</created>
       <option name="issue" value="true" />
       <option name="number" value="26" />
-      <updated>1449805638100</updated>
+      <updated>1449813500107</updated>
     </task>
     <task id="LOCAL-00001" summary="Cleanup commit">
       <created>1449805801406</created>
@@ -437,12 +632,21 @@
       <option name="project" value="LOCAL" />
       <updated>1449805801406</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lots and lots of changes">
+      <created>1449811426759</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1449811426759</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <option name="createBranch" value="false" />
     <servers>
       <FogBugz shared="false" url="https://vkcm.fogbugz.com">
-        <commitMessageFormat>#bugtracker @taskid {id}
-{summary}</commitMessageFormat>
+        <commitMessageFormat>@bug {id} 
+
+[Uncommented commit]
+
+@summary {summary}</commitMessageFormat>
         <password>dfe7dfc5dfd9dfc9dfc5dfdddf9cdf93df9a</password>
         <token>dfdcdfd9dfcedfc7dfc3dfc2dfdcdfdedfc1dfc4dfdedfd9df99dfc7dfc2df99dfd8dfc1dfd9df9edfdbdfdedfdedfdadfccdfc4dfc9df98df9ddf9f</token>
         <option name="loginAnonymously" value="false" />
@@ -454,9 +658,12 @@
         <username>spetrenko@icloud.com</username>
       </FogBugz>
       <Trello shared="true">
-        <commitMessageFormat>#trello @taskid {id} {number} 
-{summary}
-{project}</commitMessageFormat>
+        <commitMessageFormat>@trello {summary}  
+
+[Uncommented commit]
+
+@taskid {id} 
+@number {number}</commitMessageFormat>
         <option name="currentBoard">
           <TrelloBoard id="564c402c030554b514a51069" name="VKCM" />
         </option>
@@ -489,34 +696,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="56" width="1846" height="1043" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="GfmBrowser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32982263" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23974763" sideWeight="0.66577363" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13354364" sideWeight="0.50369376" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18055555" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="173" y="155" width="1646" height="843" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3318584" sideWeight="0.50607806" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17277777" sideWeight="0.33648792" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13354364" sideWeight="0.49630624" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.49764943" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="hashGenerator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15944445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17277777" sideWeight="0.6635121" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16542156" sideWeight="0.6469027" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TaskBrowser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.49765572" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17277777" sideWeight="0.33648792" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16542156" sideWeight="0.35309735" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18055555" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="173" y="155" width="1646" height="843" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11238938" sideWeight="0.49392194" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -537,16 +744,79 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Cleanup commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup commit" />
+    <MESSAGE value="Lots and lots of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots and lots of changes" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/public/pages/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/vars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/vars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/vars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/vars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/bootstrap/variables.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -556,44 +826,109 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29916897">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/nginx_error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///Applications/XAMPP/etc/httpd.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="487" column="0" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="370" column="4" selection-start-line="370" selection-start-column="4" selection-end-line="370" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file:///Applications/XAMPP/etc/extra/httpd-vhosts.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding />
+        <state vertical-scroll-proportion="0.42317382">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engine/views/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8046875">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engine/views/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09765625">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81380206">
+          <caret line="268" column="6" selection-start-line="268" selection-start-column="6" selection-end-line="268" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25188917">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12594458">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pages/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/bootstrap/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55438226">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/vars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/brow/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18513854">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#1319#1391#0" expanded="true" />
-            <marker date="1449811343000" expanded="true" signature="1430:1500" placeholder="//..." />
-          </folding>
+        <state vertical-scroll-proportion="0.3862069">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Data HD/Webapps/Essentials/Templates/admin_and_app/remark_classic_and_material/template/src/less/bootstrap/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8022923">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +937,7 @@
     <states>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
-          <last-edited>LESS root</last-edited>
+          <last-edited>Browserify root</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

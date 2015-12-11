@@ -4,9 +4,9 @@ node_modules
 api/node_modules
 
 # Compiled files
-public/build
-public/build/*
-public/build/**/*
+#public/build
+#public/build/*
+#public/build/**/*
 
 # Logs
 logs/*

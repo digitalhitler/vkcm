@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/app/brow/index.js" libraries="{browserify-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/api" libraries="{ECMAScript 6, Node.js Core, express-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/app" libraries="{HTML, HTML5 / EcmaScript 5, browserify-DefinitelyTyped, jQuery-2.0.0}" />
+    <file url="file://$PROJECT_DIR$/public" libraries="{HTML, HTML5 / EcmaScript 5, jQuery-2.0.0}" />
+    <file url="PROJECT" libraries="{alertify-DefinitelyTyped, browserify-DefinitelyTyped, ejs-DefinitelyTyped, express-DefinitelyTyped, i18next-DefinitelyTyped, jQuery-2.0.0, mongoose-DefinitelyTyped, storejs-DefinitelyTyped, winston-DefinitelyTyped}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
