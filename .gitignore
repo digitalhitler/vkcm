@@ -1,9 +1,17 @@
+
+# Node modules
 node_modules
 api/node_modules
+
+# Compiled files
 public/build
 public/build/*
 public/build/**/*
+
+# Logs
 logs/*
 *.log
+
+# Temporaries & OS specific
 *.tmp
 .DS_Store

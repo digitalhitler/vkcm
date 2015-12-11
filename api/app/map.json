@@ -1,0 +1,13 @@
+{
+  "api": {
+    "_handler": "index",
+    "_disallow": [ "anonymous", "post", "put", "delete" ],
+
+    "v1": {
+      "_handler": "v1/index",
+      "info": {
+        "_handler": "v1/info/index"
+      }
+    }
+  }
+}

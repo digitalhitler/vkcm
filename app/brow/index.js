@@ -55,8 +55,6 @@ vkcm.requireFrameworks({
   // @todo: kill-out jQuery. Its last instance
 });
 
-
-
 var Runtime = require('./modules/runtimeCollector.js')(vkcm);
 console.log(Runtime);
 
@@ -67,7 +65,7 @@ vkcm.once('frontendReady', function() {
 });
 
 console.log(vkcm.frameworks);
-
+//
 // $(document).ready(function() {
 //   console.warn('doc ready');
 // });

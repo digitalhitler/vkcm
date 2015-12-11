@@ -1,2 +1,4 @@
 <?php
-require_once ( $_SERVER["DOCUMENT_ROOT"] . "/../app/engine/load.php");
+$tem
+
+//require_once ( $_SERVER["DOCUMENT_ROOT"] . "/../app/engine/load.php");

@@ -1,0 +1,6 @@
+{
+  "debug": true,
+  "server": {
+    "port": 4050
+  }
+}
