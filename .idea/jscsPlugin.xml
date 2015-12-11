@@ -4,7 +4,6 @@
     <option name="jscsrcFile" value="$PROJECT_DIR$/.jscsrc" />
     <option name="jscsExecutable" value="/usr/local/bin/jscs" />
     <option name="nodeInterpreter" value="/usr/local/bin/node" />
-    <option name="pluginEnabled" value="true" />
     <option name="esnext" value="true" />
     <option name="esprima" value="" />
   </component>

@@ -11,7 +11,7 @@ console.log('Starting...');
 
 const path = require('path');
 
-let app = require('./app/init');
+let app = require("./app/init");
 
 // * Routing middlewares
 
