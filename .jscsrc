@@ -69,7 +69,7 @@
     },
     "requirePaddingNewLinesAfterBlocks": true,
     "requireSemicolons": true,
-    "safeContextKeyword": "_this",
+    "safeContextKeyword": "self",
     "validateLineBreaks": "LF",
     "validateQuoteMarks": "'",
     "validateIndentation": 2

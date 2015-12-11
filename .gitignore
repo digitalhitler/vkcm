@@ -1,4 +1,9 @@
 node_modules
+api/node_modules
+public/build
+public/build/*
+public/build/**/*
 logs/*
 *.log
 *.tmp
+.DS_Store
