@@ -1,4 +1,13 @@
 # VKCM
+
+Self-hosted swiss-knife for moderation VK groups, public pages & communities.
+
+## Status
+In early development. Check out sources for some definition.
+
+## Participation in project
+Feel free to contact me! My email is `spetrenko@me.com`.
+
 ## Map
 * `api\` - express-based API server
 * `api\index.js` - API server entry point
@@ -15,6 +24,5 @@
 * `public\build\` - compiled JS and CSS files from `app\`
 * `public\fonts\` - web fonts directory
 
-### Notes
+## Notes
 * JSCS rules are in `.jscsrc`. Also there is symbolic link to this file in `api\`
-* Please use
