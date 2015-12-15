@@ -11,11 +11,12 @@
 
 module.exports = function(app) {
 
-  console.log('i am loaded', app.use);
+  /*
+
+   */
 
   app.get('/api', function(req, res) {
-    console.log('approot');
-    res.send('GET request to the homepage');
+    res.send();
   });
 
   let v1 = use('routes/v1/index');

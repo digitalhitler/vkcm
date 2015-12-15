@@ -14,16 +14,22 @@ const AppException = use('app/exceptions/AppException');
 
 module.exports = {
 
-  debug: app.config.debug,
+  debug: applicationDebug,
 
   /**
    * Good output compiler
+   * @param   {object}  response data
    */
   compileResponse: function(data) {
+
     let response = {
       status: 200,
       error:  false
     };
+
+    data = data || false;
+
+    response.data = data;
 
   },
 
@@ -50,7 +56,7 @@ module.exports = {
 
     let errorMessage = errorObject.message || '(no message)';
 
-    if (!app.config.debug) {
+    if (!applicationDebug) {
       console.log(errorObject);
     } else {
 

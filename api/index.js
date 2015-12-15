@@ -11,13 +11,14 @@ console.log('Starting...');
 
 const path = require('path');
 
-let app = require("./app/init");
+// * Connecting to database
+require('./app/storage');
+
+// * Initialization
+let app = require('./app/init');
 
 // * Routing middlewares
-
 require('./routes/index')(app);
-console.log('loaded!!!');
 
+// * Final middlewares & listening
 app.start();
-
-console.log('Listening...');

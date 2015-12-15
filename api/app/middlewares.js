@@ -12,7 +12,6 @@
 
 const path            = require('path');
 const express         = require('express');
-const logger          = require('express-logger');
 const session         = require('express-session');
 const favicon         = require('serve-favicon');
 const methodOverride  = require('method-override');
@@ -20,6 +19,13 @@ const bodyParser      = require('body-parser');
 
 const InitException   = use('app/exceptions/InitException');
 const pathfinder      = use('app/pathfinder');
+
+let passport = require('passport');
+
+//const passport        = require('passport');
+let oauth2          = require('./oauth2');
+require('./auth');
+global.oauth2 = oauth2;
 
 // opbeat error tracking
 let opbeat = require('opbeat').start({
@@ -37,6 +43,19 @@ module.exports = function appMiddlewares(app) {
 
   let result = true;
 
+  if(applicationDebug) {
+
+    app.use((req, res, next) => {
+
+      let userIp = req.ip.split(':').pop();
+      let requestLog = use('app/logger')(module);
+      requestLog.info(`${userIp} ${req.method} ${req.originalUrl}`, req.query, req.params);
+
+      next();
+    });
+
+  }
+
   try {
 
     // * serve favicon
@@ -48,6 +67,9 @@ module.exports = function appMiddlewares(app) {
 
     // * required for PUT & delete http-methods
     app.use(methodOverride());
+
+    // * Passport auth
+    app.use(passport.initialize());
 
     // * session engine
     app.use(session({
@@ -65,8 +87,6 @@ module.exports = function appMiddlewares(app) {
     result = false;
 
   }
-
-  global.app = app;
 
   // * transport helpers
   app.transport = use('app/transport');

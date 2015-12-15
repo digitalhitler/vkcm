@@ -8,6 +8,8 @@ api/node_modules
 #public/build/*
 #public/build/**/*
 
+rest
+
 # Logs
 logs/*
 *.log

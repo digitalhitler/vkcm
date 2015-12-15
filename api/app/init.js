@@ -22,6 +22,8 @@ let app = express();
 app.config  = require('./config.json');
 app.map     = require('./map.json');
 
+global.applicationDebug = app.config.debug;
+
 // * First common middlewares
 
 use('app/middlewares')(app);

@@ -7,8 +7,10 @@
 
 'use strict';
 
-const express = require('express');
-let   router  = express.Router();
+const express  = require('express');
+let   router   = express.Router();
+
+let   passport = require('passport');
 
 // middleware that is specific to this router
 // router.use(function timeLog(req, res, next) {
@@ -25,5 +27,18 @@ router.get('/', function(req, res) {
 router.get('/about', function(req, res) {
   res.send('About birds');
 });
+
+router.post('/auth/token', oauth2.token);
+
+router.get('/auth/userInfo',
+  passport.authenticate('bearer', { session: false }),
+  function(req, res) {
+    // req.authInfo is set using the `info` argument supplied by
+    // `BearerStrategy`.  It is typically used to indicate scope of the token,
+    // and used in access control checks.  For illustrative purposes, this
+    // example simply returns the scope in the response.
+    res.json({ user_id: req.user.userId, name: req.user.username, scope: req.authInfo.scope })
+  }
+);
 
 module.exports = router;
