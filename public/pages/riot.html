@@ -1,0 +1,13 @@
+<transport-agent></transport-agent>
+
+
+<script type="riot/tag" src="/tags/transport-agent.js"></script>
+
+<script type="text/javascript">
+  riot.mount('*');
+  riot.route('/..', 'Riot perfect routing', function() {
+    var q = riot.route.query();
+    console.log('Routed to: ',  q);
+  })
+  riot.route.start(true);
+</script>
