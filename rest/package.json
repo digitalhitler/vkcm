@@ -1,0 +1,14 @@
+{
+  "name": "vkcm-rest-server",
+  "version": "1.0.0",
+  "description": "VKCM RESTful server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Petrenko <spetrenko@me.com>",
+  "license": "ISC",
+  "dependencies": {
+    "actionhero": "^12.3.0"
+  }
+}
