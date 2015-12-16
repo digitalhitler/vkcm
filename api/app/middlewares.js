@@ -59,7 +59,7 @@ module.exports = function appMiddlewares(app) {
   try {
 
     // * serve favicon
-    // @todo: make it real
+    // @@todo: make it real
     // app.use(favicon('favicon.ico'));
 
     // * parse json in queries body

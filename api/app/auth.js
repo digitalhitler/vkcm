@@ -1,5 +1,5 @@
 'use strict';
-//@todo: add header
+// @@todo: add header
 
 var passport                = require('passport');
 var BasicStrategy           = require('passport-http').BasicStrategy;

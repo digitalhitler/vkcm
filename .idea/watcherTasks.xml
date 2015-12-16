@@ -20,7 +20,7 @@
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="browserify" />
       <option name="checkSyntaxErrors" value="false" />
       <option name="description" value="" />

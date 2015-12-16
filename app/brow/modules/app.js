@@ -20,13 +20,45 @@ var EventEmitter = require('events').EventEmitter;
  * @param  {object} [config] configuration
  */
 var App = function(config) {
-
-  global.appRuntime = {};
-
   // Check if app is instance of App
   if (!this instanceof App) {
     return new App(config);
   }
+
+  var self = this;
+
+  /**
+   * Private application scope
+   * @private
+   * @returns {Object}
+   */
+  var privateScope = function() {
+    return {
+      /** Links to namespaces
+       *  @type {Object}
+       **/
+      namespaces: {
+        'global': global || window || document || false,
+        'app':    self,
+      },
+
+      /** Runtime data
+       *  @type {Object}
+       **/
+      runtime: {},
+
+      storage: {},
+
+      /** Links to loaded modules instances
+       *  @type {Object}
+      **/
+      instances: {},
+    };
+  };
+
+  self._ = function() {
+    return privateScope();
+  };
 
   // Set configuration
   if (typeof config === 'object') {

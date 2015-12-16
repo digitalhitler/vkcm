@@ -8,8 +8,8 @@
  * @exports AppException
  * @extends Error
  *
- * @todo: make it more than skeleton
- * @todo: output to log.
+ * @@todo: make it more than skeleton
+ * @@todo: output to log.
  */
 
 'use strict';

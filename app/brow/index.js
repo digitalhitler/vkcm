@@ -52,7 +52,7 @@ vkcm.requireFrameworks({
   specialEvents: require('./modules/specialEvents'),
 
   // jQ & BS
-  // @todo: kill-out jQuery. Its last instance
+  // @@todo: kill-out jQuery. Its last instance
 });
 
 var Runtime = require('./modules/runtimeCollector.js')(vkcm);
